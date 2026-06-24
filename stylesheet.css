@@ -67,20 +67,23 @@ html,body{
     justify-content: space-between;
     align-items: center;
     background: url(photo/purple/Illustration/Mountain/Desktop/Wallpaperto.png) no-repeat;
-    background-size: cover;
-    background-position: center;
-    padding: 70px 10%;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: right center;
+    padding: 100px 2px;
 }
 .home-img img{
     width: 220px;
     max-width: 100%;
     margin-top: 20px;
     border-radius: 10px;
+    display: none;
 }
 .home-content{
     width: 100%;
     overflow: visible;
     max-width: 500px;
+    z-index: 2;
 }
 .home-content h3{
    font-size: 32px;
@@ -88,6 +91,7 @@ html,body{
    opacity: 0;
    animation: slideBottom 1s ease forwards;
    animation-delay: .7s;
+   padding-left:15px ;
 }
 .home-content h3:nth-of-type(2){
     margin-bottom: 30px;
@@ -98,12 +102,13 @@ html,body{
     color: #0ef;
 }
 .home-content h1{
-    font-size: 56px;
+    font-size: 52px;
     font-weight: 700;
     margin: -3px 0 ;
     opacity: 0;
     animation: slideRight 1s ease forwards;
     animation-delay: 1s;
+    padding-left:10px ;
 }
 .home-content p{
     font-size: 20px;
@@ -111,6 +116,8 @@ html,body{
     animation: slideLeft 1s ease forwards; 
      animation-delay: 1s;
      display: flex;
+     padding-left:15px ;
+     color: #FBBF24;
 }
 
 .home-sci a{
